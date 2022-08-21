@@ -1,0 +1,8 @@
+main: server.o 
+	gcc server.o -o server
+	
+server: server.c
+	gcc server.c -c server.o
+
+clean:
+	rm *.o server
